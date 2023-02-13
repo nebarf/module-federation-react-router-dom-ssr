@@ -10,7 +10,7 @@ module.exports = {
     name: "remote2",
     filename: "remoteEntry.js",
     exposes: {
-      "./Router": "./src/Router",
+      "./Index": "./src/routing/MemoryRouter",
     },
     shared: {
       ...deps,
@@ -30,7 +30,7 @@ module.exports = {
       filename: "remoteEntry.js",
       library: { type: "commonjs-module" },
       exposes: {
-        "./Router": "./src/Router",
+        "./Index": "./src/routing/MemoryRouter",
       },
       shared: {
         ...deps,

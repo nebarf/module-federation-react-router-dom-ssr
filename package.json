@@ -12,6 +12,9 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn workspaces run build",
-    "serve": "yarn workspaces run serve"
+    "serve": "concurrently \"yarn workspace remote1 serve\" \"yarn workspace remote2 serve\" \"yarn workspace shell serve\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
