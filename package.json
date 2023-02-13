@@ -1,0 +1,17 @@
+{
+  "name": "module-federation-react-router-dom-ssr",
+  "private": true,
+  "workspaces": [
+    "./shell",
+    "./remote1",
+    "./remote2"
+  ],
+  "version": "0.0.1",
+  "description": "Example of React SSR and react-router-dom nested routers",
+  "author": "Francesco Benedetto",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "serve": "yarn workspaces run serve"
+  }
+}
